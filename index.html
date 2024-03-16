@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-wodth" , initial-scale="1.0">
+  <script src="https://kit.fontawesome.com/d4deb6b8e7.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/carrossel-promocao.css">
+  <link rel="stylesheet" href="css/mais-vendidos.css">
+  <link rel="stylesheet" href="css/section-parceiros.css">
+  <link rel="stylesheet" href="css/sobre-nos.css">
+  <link rel="stylesheet" href="css/nossos-clientes.css">
+  <link rel="stylesheet" href="css/fale.conosco.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="script.js" defer></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="imagens/logo.svg" alt="esportes+" class="navbar__logo">
+    <div class="navbar-menu">
+      <ul class="lista-menu">
+        <a href="#">
+          <li class="lista-menu-item">Esportes</li>
+        </a>
+        <a href="#">
+          <li class="lista-menu-item">Masculino</li>
+        </a>
+        <a href="#">
+          <li class="lista-menu-item">Feminino</li>
+        </a>
+        <a href="#">
+          <li class="lista-menu-item">Calçados</li>
+        </a>
+        <a href="#">
+          <li class="lista-menu-item">Equipamentos</li>
+        </a>
+      </ul>
+    </div>
+    <input type="search" class="barra__search" placeholder="O que você procura?">
+    <img src="imagens/search.svg" class="search__icon-img" alt="">
+    <div class="container__icons">
+      <i class="nav__icons nav__icons-coracao far fa-heart"></i>
+      <a href="#">
+        <i class="nav__icons far fa-user-circle"></i>
+      </a>
+      <input type="checkbox" id="menu" class="menu-hamburguer">
+      <label for="menu">
+        <i class="nav__icons-menu-hamburguer nav__icons fas fa-bars"></i>
+      </label>
+      <ul class="lista__menu-hamburguer">
+        <li class="lista-item__menu-hamburguer"><a href="#"> Esportes</a></li>
+        <hr class="linha-mh">
+        <li class="lista-item__menu-hamburguer"><a href="#"> Masculino</a></li>
+        <hr class="linha-mh">
+        <li class="lista-item__menu-hamburguer"><a href="#"> Feminino</a></li>
+        <hr class="linha-mh">
+        <li class="lista-item__menu-hamburguer"><a href="#"> Calçados</a></li>
+        <hr class="linha-mh">
+        <li class="lista-item__menu-hamburguer"><a href="#"> Equipamentos</a></li>
+        <hr class="linha-mh">
+      </ul>
+    </div>
+  </nav>
+  <div class="banner">
+    <div class="banner__container">
+      <!--radio button-->
+      <input type="radio" name="radio-banner" id="radio1">
+      <input type="radio" name="radio-banner" id="radio2">
+      <input type="radio" name="radio-banner" id="radio3">
+      <!--fim-->
+      <!--banner-images-->
+      <div class="banner-image first">
+        <img src="imagens/3.png" class="fotos__banner" alt="imagem 1">
+      </div>
+      <div class="banner-image">
+        <img src="imagens/2.png" class="fotos__banner" alt="imagem 2">
+      </div>
+      <div class="banner-image">
+        <img src="imagens/1.png" class="fotos__banner" alt="imagem 3">
+      </div>
+      <!--fim-->
+      <!--navigation auto-->
+      <div class="navigation-auto">
+        <div class="auto-banner1"></div>
+        <div class="auto-banner2"></div>
+        <div class="auto-banner3"></div>
+      </div>
+    </div>
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+    </div>
+  </div>
+
+  <div class="time-promo">
+    <h1 class="promo">PROMO</h1>
+    <div class="time" id="time"></div>
+  </div>
+  <section class="carrossel">
+    <div class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="image-list">
+          <div class="carrossel-image first">
+            <div class="etiqueta-promocao etqt-img-1">
+              <p>15% OFF</p>
+            </div>
+            <img src="/img-carrosel/Rectangle 85(2).svg" class="image-item image-um" alt="imagem 1">
+            <h3 class="carrossel__sub-titulo">Mochila Nike</h3>
+            <p class="carrossel__descricao">Confeccionada em tecido poliéster, sendo 65% de fibras de poliéster reciclado, a mochila Nike Elemental é um modelo prático e versátil para usar no cotidiano.</p>
+            <div class="container__precos-e-icons">
+              <div class="preco">
+                <span class="preco-sem-promo">R$ 135,00<br></span>
+                <strong class="preco-de-promocao">R$ 110,00</strong>
+              </div>
+              <div class="icon__gostei-e-sacola">
+                <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                <button class="carrossel__button-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="carrossel-image">
+            <div class="etiqueta-promocao etqt-img-1">
+              <p>20% OFF</p>
+            </div>
+            <img src="img-carrosel/Rectangle 85(3).svg" class="image-item image-dois" alt="imagem 2">
+            <h3 class="carrossel__sub-titulo">Converse Chuck 70</h3>
+            <p class="carrossel__descricao">Em busca do futuro, o Chuck 70 Plus apresenta características clássicas do Chuck 70 e adiciona detalhes que conferem um visual único e disruptivo.</p>
+            <div class="container__precos-e-icons">
+              <div class="preco">
+                <span class="preco-sem-promo">R$ 350,00<br></span>
+                <strong class="preco-de-promocao">R$ 280,00</strong>
+              </div>
+              <div class="icon__gostei-e-sacola">
+                <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                <button class="carrossel__button-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="carrossel-image">
+            <div class="etiqueta-promocao etqt-img-1">
+              <p>10% OFF</p>
+            </div>
+            <img src="img-carrosel/Rectangle 85.svg" class="image-item image-tres" alt="imagem 3">
+            <h3 class="carrossel__sub-titulo">Camisa Manchester</h3>
+            <p class="carrossel__descricao">A Camisa do Real Madrid II 23 adidas é a escolha perfeita para os verdadeiros torcedores “Merengues” que buscam qualidade e estilo incomparáveis.</p>
+            <div class="container__precos-e-icons">
+              <div class="preco">
+                <span class="preco-sem-promo">R$ 312,00<br></span>
+                <strong class="preco-de-promocao">R$ 280,80</strong>
+              </div>
+              <div class="icon__gostei-e-sacola">
+                <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                <button class="carrossel__button-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="carrossel-image">
+            <div class="etiqueta-promocao etqt-img-4">
+              <p>15% OFF</p>
+            </div>
+            <img src="img-carrosel/Rectangle 86.svg" class="image-item image-quatro" alt="imagem 4">
+            <h3 class="carrossel__sub-titulo">Boné Aba Curva Nike</h3>
+            <p class="carrossel__descricao">Clássico e confortável, o boné Nike Sportswear Heritage Heritage86 apresenta um design de seis painéis feito com tecido de sarja e um fechamento ajustável.</p>
+            <div class=" container__precos-e-icons">
+              <div class="preco">
+                <span class="preco-sem-promo">R$ 119,90<br></span>
+                <strong class="preco-de-promocao">R$ 100,00</strong>
+
+              </div>
+              <div class="icon__gostei-e-sacola">
+                <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                <button class="carrossel__button-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="carrossel-image">
+            <div class="etiqueta-promocao etqt-img-5">
+              <p>15% OFF</p>
+            </div>
+            <img src="img-carrosel/Rectangle 85(1).svg" class="image-item image-cinco" alt="imagem 5">
+            <h3 class="carrossel__sub-titulo">Calça Legging Oxer</h3>
+            <p class="carrossel__descricao">A Calça Legging Feminina Oxer Sem Costura foi projetada para oferecer tudo o que você precisa em sua jornada de bem-estar.</p>
+            <div class="container__precos-e-icons">
+              <div class="preco">
+                <span class="preco-sem-promo">R$ 99,90<br></span>
+                <strong class="preco-de-promocao">R$ 85,00</strong>
+
+              </div>
+              <div class="icon__gostei-e-sacola">
+                <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                <button class="carrossel__button-comprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <button id="next-slide" class="slide-button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+  </section>
+  <section aria-labelledby="mais-vendidos">
+    <p class="mais-vendidos__frase">os queridinhos voltaram.</p>
+    <h2 class="mais-vendidos__subtitulo"><strong>MAIS VENDIDOS</strong><span>.</span>
+    </h2>
+    <div class="carrossel__mais-vendidos">
+      <section class="carrossel">
+        <div class="container container-carrossel-mais-vendidos">
+          <div class="slider-wrapper">
+            <button id="prev-slide-dois" class="slide-button slide-button-dois">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="image-list image-list-dois">
+
+              <div class="carrossel-image first">
+                <div class="etiqueta-mais-vendidos etqt-mais-vendidos-um">
+                  <p>1,2 vendidos hoje</p>
+                </div>
+                <img src="/carrossel-maisvendidos/Rectangle 107(1).svg" class="image-item image-um" alt="imagem 1">
+                <h3 class="carrossel__subtitulo">Jaqueta Corta Vento</h3>
+                <a href="#"><span class="carrossel__link">mais detalhes</span></a>
+                <div class="container__precos-e-icons">
+                  <div class="preco-e-button">
+                    <strong class="preco-de-promocao preco-mais-vendidos">R$ 110,00</strong>
+                    <button class="carrossel__button-comprar">Comprar</button>
+                  </div>
+                  <div class="icon__gostei-e-sacola">
+                    <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carrossel-image">
+                <div class="etiqueta-mais-vendidos etqt-mais-vendidos-um">
+                  <p>1,2 vendidos hoje</p>
+                </div>
+                <img src="carrossel-maisvendidos/Rectangle 107(2).svg" class="image-item image-dois" alt="imagem 2">
+                <h3 class="carrossel__subtitulo">Tênis Feminino Adidas</h3>
+                <a href="#"><span class="carrossel__link">mais detalhes</span></a>
+                <div class="container__precos-e-icons">
+                  <div class="preco-e-button">
+                    <strong class="preco-de-promocao preco-mais-vendidos">R$ 168,20</strong>
+                    <button class="carrossel__button-comprar">Comprar</button>
+                  </div>
+                  <div class="icon__gostei-e-sacola">
+                    <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carrossel-image">
+                <div class="etiqueta-mais-vendidos etqt-mais-vendidos-um">
+                  <p>1,2 vendidos hoje</p>
+                </div>
+                <img src="carrossel-maisvendidos/Rectangle 107(3).svg" class="image-item image-tres" alt="imagem 3">
+                <h3 class="carrossel__subtitulo">Top Feminino Nike</h3>
+                <a href="#"><span class="carrossel__link">mais detalhes</span></a>
+                <div class="container__precos-e-icons">
+                  <div class="preco-e-button">
+                    <strong class="preco-de-promocao">R$ 89,90<br></strong>
+                    <button class="carrossel__button-comprar">Comprar</button>
+                  </div>
+                  <div class="icon__gostei-e-sacola">
+                    <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carrossel-image">
+                <div class="etiqueta-mais-vendidos etqt-mais-vendidos-um">
+                  <p>1,2 vendidos hoje</p>
+                </div>
+                <img src="carrossel-maisvendidos/Rectangle 107.svg" class="image-item image-cinco" alt="imagem 5">
+                <h3 class="carrossel__subtitulo">Calça Treino Adidas</h3>
+                <a href="#"><span class="carrossel__link">mais detalhes</span></a>
+                <div class="container__precos-e-icons">
+                  <div class="preco-e-button">
+                    <strong class="preco-de-promocao  preco-mais-vendidos">R$ 123,90</strong>
+                    <button class="carrossel__button-comprar">Comprar</button>
+                  </div>
+                  <div class="icon__gostei-e-sacola">
+                    <a href="#"><i class="far fa-heart icon-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-basket-shopping icon-bag"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <button id="next-slide-dois" class="slide-button slide-button-dois ">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+      </section>
+    </div>
+  </section>
+  <section aria-labelledby="nossos-parceiros">
+    <p class="nossos-parceiros__frase">as melhores marcas só aqui.</p>
+    <h2 class="nossos-parceiros__subtitulo"><strong>NOSSOS PARCEIROS</strong></h2>
+    <div class="logos_das_marcas">
+      <img src="imagens/parceiros.svg" alt="converse, adidas, National Football League, asics">
+    </div>
+
+  </section>
+  <section aria-labelledby="sobre-nos">
+    <div class="sobre-nos">
+      <p class="sobre-nos__categoria">informações</p>
+      <h2 class="sobre-nos__subtitulo">SOBRE NÓS.</h2>
+      <div class="sobre-nos__caixas-de-informacoes">
+        <div class="caixas-de-informacoes__item caixaum">
+          <h3 class="caixas-de-informacoes__subtitulo">VISÃO<span>.</span></h3>
+          <p class="sobre-nos__texto">"Ser reconhecida como a principal destinação online para entusiastas de esportes, proporcionando uma experiência de compra excepcional, oferecendo produtos de alta qualidade e inspirando um estilo de vida ativo e saudável."</p>
+        </div>
+        <div class="caixas-de-informacoes__item caixadois">
+          <h3 class="caixas-de-informacoes__subtitulo">MISSÃO<span>.</span></h3>
+          <p class="sobre-nos__texto">"Na nossa missão de promover uma vida saudável e ativa, buscamos fornecer aos nossos clientes acesso fácil aos melhores produtos esportivos do mercado. Comprometemo-nos a oferecer uma seleção diversificada, qualidade superior e um serviço excepcional, criando uma comunidade onde apaixonados por esportes possam encontrar tudo o que precisam para alcançar seus objetivos e desfrutar plenamente de sua jornada esportiva."</p>
+        </div>
+        <div class="caixas-de-informacoes__item caixatres">
+          <h3 class="caixas-de-informacoes__subtitulo">VALORES<span>.</span></h3>
+          <ul class="caixas-de-valores__lista">
+            <li class="lista-item">
+              <span class="lista-item__subtitulo"><span class="ponto">.</span> Excelência do Cliente</span>
+              <p class="lista-item__texto">Colocamos nossos clientes em primeiro lugar, buscando constantemente superar suas expectativas, oferecendo um atendimento excepcional e produtos de qualidade superior.</p>
+            </li>
+            <li class="lista-item">
+              <span class="lista-item__subtitulo"><span class="ponto">.</span> Integridade e Transparência</span>
+              <p class="lista-item__texto">Operamos com honestidade e transparência em todas as interações. Construímos relacionamentos baseados na confiança, tanto com nossos clientes quanto com nossos parceiros.</p>
+            </li>
+            <li class="lista-item">
+              <span class="lista-item__subtitulo"><span class="ponto">.</span> Paixão pelo Esporte</span>
+              <p class="lista-item__texto">Compartilhamos a paixão pelos esportes e acreditamos nos benefícios transformadores que um estilo de vida ativo pode proporcionar. Buscamos inspirar e apoiar nossos clientes em suas jornadas esportivas.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="nossos-clientes">
+    <div class="nossos-clientes">
+      <p class="nossos-clientes__categoria">nossos clientes</p>
+      <h2 class="nossos-clientes__subtitulo"><strong>ACREDITE EM QUEM VOCÊ CONHECE<span>.</span></strong></h2>
+      <div class="avaliacao-do-cliente">
+        <div class="foto--do-cliente">
+          <img src="imagens/cliente.svg" alt="">
+        </div>
+        <div class="container-cliente">
+          <p class="texto__recado-do-cliente">“É impressionante como o <strong>Esportes+</strong> têm de tudo! Desde chuteiras maneiras até aquela roupa irada pra treinar. É de primeira, não tem erro! Sempre encontro o que preciso, e a entrega é mais rápida que meu sprint em campo. Tamo junto com a qualidade, família!”</p>
+          <p class="nome-do-cliente">RICHARLISON</p>
+          <p class="profissao-do-cliente">atacante da seleção brasileira</p>
+        </div>
+      </div>
+  </section>
+  <section aria-labelledby="fale-conosco">
+    <div class="section-container__fale-conosco">
+      <div class="fale-conosco">
+        <p class="fale-conosco__frase-categoria">entre em contato</p>
+        <h2 class="fale-conosco__subtitulo"><strong>FALE CONOSCO<span>.</span><strong></h2>
+        <div class="container-informacoes">
+          <img src="imagens/logo-fale-conosco.svg" class="logo-aba-contatos" alt="logo esportes+">
+          <div class="container-informacoes__grid">
+            <div class="container-grid__endereco">
+              <div class="icon-flex">
+                <a href="#">
+                  <img src="imagens/Vector.svg" class="icon-map__endereco icon__fale-conosco icon-mapa" alt="">
+                  <p class="endereco">Rua Ali Perto,35<br>
+                    Rio de Janeiro - RJ<br>
+                    Brasil - Terra - Via Láctea</p>
+                </a>
+              </div>
+            </div>
+            <div class="container-grid__contatos">
+              <div class="icon-flex">
+                <a href="#">
+                  <i class="fas fa-envelope icon__fale-conosco icon-email"></i>
+                  <p class="email">contato@esporteplus.com</p>
+              </div>
+              <p class="email segundoemail">assistencia@esporteplus.com</p>
+              <div class="icon-flex">
+                <i class="fas fa-phone icon__fale-conosco icon-phone"></i>
+                <p class="numero">+55 21 99999-9999</p>
+                </a>
+              </div>
+            </div>
+            <div class="container-grid__redes-sociais">
+              <a href="#">
+                <i class="fab fa-instagram icon__fale-conosco icon-redes-sociais"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook icon__fale-conosco icon-redes-sociais"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-youtube icon__fale-conosco icon-redes-sociais"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__fale-conosco">
+        <div class="container__formulario-de-contato">
+          <div>
+            <strong class="dados-do-cliente">Nome</strong>
+            <input type="text" placeholder="Seu nome" class="input__dados-do-cliente inputs">
+          </div>
+          <div>
+            <strong class=" dados-do-cliente">Telefone</strong>
+            <input type="text" placeholder="(21) 99999-9999" class="input__dados-do-cliente inputs">
+          </div>
+          <div>
+            <strong class=" dados-do-cliente email-name">Email</strong>
+            <input type="text" placeholder="contato@email.com" class="input__dados-do-cliente inputs input-email">
+          </div>
+        </div>
+        <div class="container__campo-de-mensagem">
+          <strong class="mensagem-de-texto">Mensagem</strong>
+          <input type="text" placeholder="O que você precisa?" class="input-mensagem-de-texto input__dados-do-cliente inputs">
+          <button class="button__formulario">Enviar Mensagem</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <footer class="rodape">
+    <div class="container__rodape">
+      <img src="imagens/logo.svg" alt="esportes+" class="rodape__logo">
+      <div class="contato">
+        <h2 class="container__subtitulo">CONTATO</h2>
+        <p class="texto">+55 21 99999-9999</p>
+        <p class="texto">contato@esportesplus.com</p>
+        <hr class="linha">
+        <p class="texto">Rua ali perto, 42 - Botafogo</p>
+        <p class="texto">Rio de Janeiro - RJ</p>
+        <hr class="linha">
+        <div class="rodape-redes-sociais">
+          <a href="#">
+            <i class="fab fa-instagram icon__rodape"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook icon__rodape"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube icon__rodape"></i>
+          </a>
+        </div>
+      </div>
+      <div class="informacoes">
+        <h2 class="container__subtitulo">INFORMAÇOES</h2>
+        <ul class="informacoes__links">
+          <li class="informacoes__links-item"><a href="#">Artigos esportivos </a></li>
+          <li class="informacoes__links-item"> <a href="#">Trabalhe Conosco </a></li>
+          <li class="informacoes__links-item"><a href="#">Contato </a></li>
+          <li class="informacoes__links-item"><a href="#">Termos e Condições </a></li>
+      </div>
+    </div>
+    <span class="texto-final">Esportes+ © Alguns Direitos Reservados</span>
+  </footer>
+</body>
+
+</html>

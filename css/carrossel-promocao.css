@@ -1,0 +1,136 @@
+.carrossel {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 95%;
+}
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button,
+.slider-wrapper .slide-button-dois {
+  position: absolute;
+  top: 45%;
+  height: 50px;
+  width: 50px;
+  color: #ccc;
+  border: none;
+  outline: none;
+  background: #000;
+  font: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover,
+.slider-wrapper .slide-button-dois:hover {
+  background: #444;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -10px;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -10px;
+}
+
+.slider-wrapper .slide-button#prev-slide-dois {
+  left: 96%;
+}
+
+.slider-wrapper .image-list,
+.slider-wrapper .image-list-dois {
+  display: grid;
+  gap: 18px;
+  font-size: 0;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item,
+.slider-wrapper .image-list-dois .image-item {
+  width: 320px;
+  height: 348px;
+  object-fit: cover;
+}
+.preco-sem-promo {
+  color: var(--cinza-escuro);
+  text-decoration: line-through;
+  font-size: 20px;
+}
+.preco-de-promocao {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+}
+.container__precos-e-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icon__gostei-e-sacola {
+  display: flex;
+  gap: 2px;
+  text-align: end;
+  align-items: end;
+  font-size: 25px;
+}
+.icon__gostei-e-sacola i {
+  color: #000;
+}
+.carrossel__sub-titulo,
+.carrossel__descricao,
+.carrossel__button-comprar {
+  display: none;
+}
+@media screen and (min-width: 1220px) {
+  .slider-wrapper .image-list .image-item {
+    width: 299px;
+    height: 380px;
+  }
+  .slider-wrapper .slide-button-dois {
+    display: none;
+  }
+  .image-list-dois {
+    margin-left: 100px;
+  }
+  .carrossel__sub-titulo,
+  .carrossel__descricao,
+  .carrossel__button-comprar {
+    display: block;
+  }
+  .carrossel__sub-titulo {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0.5em 0;
+  }
+  .carrossel__descricao {
+    font-size: 13px;
+    color: var(--cinza);
+    margin: 0.5em 0;
+  }
+  .preco-sem-promo {
+    font-size: 12px;
+  }
+  .preco-de-promocao {
+    font-size: 20px;
+  }
+  .carrossel__button-comprar {
+    width: 110px;
+    height: 36px;
+    background: var(--preto);
+    border-radius: 10px;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .icon__gostei-e-sacola .icon-heart {
+    font-size: 35px;
+  }
+  .icon__gostei-e-sacola .icon-bag {
+    display: none;
+  }
+}

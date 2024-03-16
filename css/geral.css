@@ -1,0 +1,26 @@
+:root {
+  --azul: #3dd5f3;
+  --branco: #fff;
+  --branco-claro: #dbd6d6;
+  --preto: #141414;
+  --cinza: #9c9c9c;
+  --cinza-escuro: #717171;
+  --cinza-cor-texto: #b2b2b2;
+  --gradiente-linear-azul: linear-gradient(
+    217.38deg,
+    #199ac0 14%,
+    #014256 70.42%
+  );
+  --gradiente-linear-azul-claro: linear-gradient(
+    180deg,
+    #199ac0 0%,
+    #0d6d8a 51%,
+    #014256 100%
+  );
+  --cor-de-fundo-cinza: #f7f7f7;
+  --cor-input: #ededed;
+  --button: #014256;
+}
+img {
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.nossos-parceiros__frase {
+  color: var(--cinza);
+  font-size: 15px;
+  padding: 3em;
+}
+.nossos-parceiros__subtitulo {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 1em 0.5em;
+}

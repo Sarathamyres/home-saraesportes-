@@ -1,0 +1,128 @@
+.navbar {
+  background-color: var(--azul);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.navbar__logo {
+  width: 25%;
+}
+.barra__search {
+  width: 35%;
+  height: 60px;
+  border: 1px solid var(--branco);
+  border-radius: 10px;
+  margin: 1em 0;
+  margin-left: 9em;
+}
+.barra__search::placeholder {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 0.5em;
+  margin-top: -7px;
+}
+.search__icon-img {
+  max-width: 3.5%;
+  margin-left: -80px;
+}
+.container__icons {
+  font-size: 50px;
+}
+.container__icons a {
+  text-decoration: none;
+  color: var(--preto);
+}
+.container__icons .nav__icons {
+  margin-left: 0.3em;
+}
+.container__icons .nav__icons {
+  cursor: pointer;
+}
+.nav__icons-coracao:hover {
+  font-size: 50px;
+  background-color: red;
+  border-radius: 50% 50% 50% 50% / 25% 25% 75% 75%;
+}
+
+/*menu hamburguer*/
+.lista__menu-hamburguer {
+  background-color: var(--azul);
+  display: none;
+  position: absolute;
+  height: 198vw;
+  width: 50vw;
+  right: 0;
+  z-index: 1;
+  top: 118.7px;
+  line-height: 2em;
+}
+.menu-hamburguer:checked ~ .lista__menu-hamburguer {
+  display: block;
+  position: fixed;
+}
+.menu-hamburguer {
+  display: none;
+}
+.lista__menu-hamburguer {
+  padding: 1em;
+}
+.linha-mh {
+  background: var(--preto);
+  border: none;
+  margin: 0;
+  width: 60%;
+  height: 2px;
+}
+.navbar-menu {
+  display: none;
+}
+@media screen and (min-width: 1220px) {
+  .navbar__logo {
+    width: 160px;
+    height: 36px;
+  }
+  .nav__icons-menu-hamburguer {
+    display: none;
+  }
+  .barra__search {
+    width: 300px;
+    height: 32px;
+    margin-left: -70px;
+  }
+  .barra__search::placeholder {
+    font-size: 12px;
+    top: 50%;
+  }
+  .search__icon-img {
+    width: 20px;
+    height: 20px;
+    margin-left: -150px;
+  }
+  .nav__icons {
+    font-size: 30px;
+  }
+  .navbar-menu {
+    display: block;
+  }
+
+  .lista-menu {
+    display: flex;
+  }
+  .lista-menu-item {
+    margin-left: 2em;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .lista-menu a {
+    text-decoration: none;
+  }
+}

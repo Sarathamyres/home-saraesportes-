@@ -1,0 +1,181 @@
+.fale-conosco {
+  padding: 1em 0;
+}
+.fale-conosco__frase-categoria {
+  color: var(--cinza);
+  font-size: 15px;
+  padding: 3em;
+}
+.fale-conosco__subtitulo {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 1em 0.5em;
+}
+.fale-conosco__subtitulo span {
+  color: var(--azul);
+}
+.logo-aba-contatos {
+  max-width: 25%;
+  margin: 1em;
+}
+
+.container-informacoes {
+  background: var(--gradiente-linear-azul-claro);
+  padding: 1em;
+  border-radius: 10px;
+}
+.container-informacoes__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container-informacoes__grid a {
+  color: var(--branco);
+  text-decoration: none;
+  font-size: 25px;
+}
+.icon-flex a {
+  display: flex;
+}
+.icon__fale-conosco {
+  max-width: 5%;
+  margin: 0 1em;
+}
+
+.segundoemail {
+  margin-left: 65px;
+  margin-bottom: 1em;
+}
+.container-grid__redes-sociais {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.container__fale-conosco {
+  background-color: var(--cor-de-fundo-cinza);
+  margin: 1em 0 1em 0.5em;
+  padding: 1em;
+}
+.container__formulario-de-contato {
+  display: flex;
+  justify-content: space-between;
+}
+.dados-do-cliente {
+  color: var(--preto);
+  font-weight: 700;
+  font-size: 25px;
+}
+.input__dados-do-cliente {
+  background: var(--cor-input);
+  margin: 1em 0;
+  font-size: 20px;
+  width: 250px;
+  height: 40px;
+  border: none;
+}
+.mensagem-de-texto {
+  color: var(--preto);
+  font-weight: 700;
+  font-size: 25px;
+  display: flex;
+  margin: 0 1em;
+}
+.input-mensagem-de-texto {
+  width: 92vw;
+  height: 100px;
+}
+.input-mensagem-de-texto::placeholder,
+.input__dados-do-cliente::placeholder {
+  padding: 0.5em;
+}
+
+.button__formulario {
+  font-size: "Monteserrat";
+  background: var(--button);
+  padding: 0.5em;
+  border-radius: 15px;
+  color: var(--branco);
+  font-size: 20px;
+  font-weight: 700;
+}
+.fale-conosco__frase-categoria-responsivo,
+.fale-conosco__subtitulo-responsivo {
+  display: none;
+}
+@media screen and (min-width: 1220px) {
+  .fale-conosco__subtitulo,
+  .fale-conosco__frase-categoria {
+    display: none;
+  }
+  .fale-conosco {
+    padding: 1em;
+  }
+  .logo-fale-conosco {
+    width: 128px;
+    height: 29px;
+  }
+  .fale-conosco .endereco {
+    line-height: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .icon-mapa {
+    margin-top: -4em;
+  }
+  .fale-conosco .email,
+  .icon-email {
+    line-height: 1.5em;
+  }
+  .fale-conosco .segundoemail {
+    margin-bottom: 2em;
+  }
+  .fale-conosco .numero {
+    margin: 0 0 0 0.5em;
+  }
+  .icon-phone {
+    margin: 0 0 2m 1em;
+  }
+  .container-grid__redes-sociais {
+    margin-top: 2em;
+    margin-left: -20%;
+  }
+  .container-informacoes__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container-informacoes {
+    width: 460px;
+    height: 688px;
+  }
+  .input-mensagem-de-texto {
+    margin-left: 20px;
+  }
+  .container__formulario-de-contato {
+    margin-left: 1em;
+    display: flex;
+  }
+  .fale-conosco .inputs {
+    margin-left: 3em;
+  }
+  .container__fale-conosco {
+    width: 910px;
+    height: 688px;
+  }
+  .container__formulario-de-contato {
+    display: flex;
+    word-wrap: break-word;
+    width: 20px;
+    gap: 0em;
+    margin-bottom: 50px;
+  }
+  .input-mensagem-de-texto {
+    width: 83%;
+    height: 248px;
+  }
+  .button__formulario {
+    display: flex;
+    margin: 1em;
+  }
+  .section-container__fale-conosco {
+    display: flex;
+  }
+}

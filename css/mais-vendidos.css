@@ -1,0 +1,28 @@
+.mais-vendidos {
+  margin: 3em 0 0 0;
+}
+.mais-vendidos__frase {
+  color: var(--cinza);
+  font-size: 15px;
+  padding: 3em;
+}
+.mais-vendidos__subtitulo {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 1em 0.5em;
+}
+.mais-vendidos__subtitulo span {
+  color: var(--azul);
+}
+/*carrossel*/
+@media screen and (min-width: 1220px) {
+  .slider-wrapper .slide-button-dois {
+    display: none;
+  }
+  .image-list-dois {
+    margin-left: 100px;
+  }
+  .etiqueta-mais-vendidos {
+    display: block;
+  }
+}
